@@ -19,11 +19,8 @@ const Header = ({ titlePre = '' }) => {
   return (
     <header className={styles.header}>
       <Head>
-        <title>{titlePre ? `${titlePre} |` : ''} My Notion Blog</title>
-        <meta
-          name="description"
-          content="An example Next.js site using Notion for the blog"
-        />
+        <title>{titlePre ? `${titlePre} |` : ''} Powerful Bass</title>
+        <meta name="description" content="Personal Page for Naohiro Fukudome" />
         <meta name="og:title" content="Powerful Bass" />
         <meta property="og:image" content={ogImageUrl} />
         <meta name="twitter:site" content="@Gedyra" />
