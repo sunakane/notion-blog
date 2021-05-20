@@ -6,29 +6,17 @@ import contactStyles from '../styles/contact.module.css'
 
 import GitHub from '../components/svgs/github'
 import Twitter from '../components/svgs/twitter'
-import Envelope from '../components/svgs/envelope'
-import LinkedIn from '../components/svgs/linkedin'
 
 const contacts = [
   {
     Comp: Twitter,
     alt: 'twitter icon',
-    link: 'https://twitter.com/_ijjk',
+    link: 'https://twitter.com/Gedyra',
   },
   {
     Comp: GitHub,
     alt: 'github icon',
-    link: 'https://github.com/ijjk',
-  },
-  {
-    Comp: LinkedIn,
-    alt: 'linkedin icon',
-    link: 'https://www.linkedin.com/in/jj-kasper-0b5392166/',
-  },
-  {
-    Comp: Envelope,
-    alt: 'envelope icon',
-    link: 'mailto:jj@jjsweb.site?subject=Notion Blog',
+    link: 'https://github.com/sunakane',
   },
 ]
 
@@ -38,15 +26,12 @@ export default function Contact() {
       <Header titlePre="Contact" />
       <div className={sharedStyles.layout}>
         <div className={contactStyles.avatar}>
-          <img src="/avatar.png" alt="avatar with letters JJ" height={60} />
+          <img src="/avatar.jpeg" alt="avatar" height={60} />
         </div>
 
-        <h1 style={{ marginTop: 0 }}>Contact</h1>
+        <h1 style={{ marginTop: 0 }}>About</h1>
 
-        <div className={contactStyles.name}>
-          JJ Kasper - Next.js Engineer @{' '}
-          <ExtLink href="https://vercel.com">Vercel</ExtLink>
-        </div>
+        <div className={contactStyles.name}>Naohiro Fukudome</div>
 
         <div className={contactStyles.links}>
           {contacts.map(({ Comp, link, alt }) => {
@@ -56,6 +41,17 @@ export default function Contact() {
               </ExtLink>
             )
           })}
+        </div>
+
+        <div className="explanation" style={{ textAlign: 'center' }}>
+          <p>Like: Logic, TypeScript, Web Backend</p>
+          <p>
+            Member of{' '}
+            <ExtLink href="https://twitter.com/CancaoNovaChor">
+              @CancaoNovaChor
+            </ExtLink>{' '}
+            / DoroNuma
+          </p>
         </div>
       </div>
     </>
